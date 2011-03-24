@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>parent</artifactId>
+		<groupId>ch.berg-turbenthal.parent</groupId>
+		<version>0.0.8-SNAPSHOT</version>
+	</parent>
+	<groupId>ch.eleveneye.hs485</groupId>
+	<artifactId>restserver</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>Rest-Server</name>
+	<dependencies>
+		<dependency>
+			<groupId>ch.eleveneye.hs485</groupId>
+			<artifactId>devices</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-server</artifactId>
+			<version>1.5</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.jersey.contribs</groupId>
+			<artifactId>jersey-simple-server</artifactId>
+			<version>1.5</version>
+		</dependency>
+	</dependencies>
+</project>
