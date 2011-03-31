@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
 
+import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
@@ -24,6 +25,11 @@ public class Devices {
 	@XmlElement(name = "device")
 	public Collection<XmlDevice> getDevices() {
 		return devices;
+	}
+
+	@XmlAttribute(name = "type")
+	public String getType() {
+		return "array";
 	}
 
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<devices>
+<devices type="array">
 	<device>
 		<actor>
 			<id>0</id>
@@ -79,8 +79,8 @@
 	<device>
 		<actor>
 			<id>0</id>
-			<capability>DIMM</capability>
 			<capability>SWITCH</capability>
+			<capability>DIMM</capability>
 			<dimmValue>-1</dimmValue>
 			<dimmerMode>FULL_BRIGHNESS</dimmerMode>
 			<maxValue>15</maxValue>
@@ -94,8 +94,8 @@
 	<device>
 		<actor>
 			<id>0</id>
-			<capability>DIMM</capability>
 			<capability>SWITCH</capability>
+			<capability>DIMM</capability>
 			<dimmValue>-1</dimmValue>
 			<dimmerMode>FULL_BRIGHNESS</dimmerMode>
 			<maxValue>15</maxValue>
@@ -109,8 +109,8 @@
 	<device>
 		<actor>
 			<id>0</id>
-			<capability>DIMM</capability>
 			<capability>SWITCH</capability>
+			<capability>DIMM</capability>
 			<dimmValue>-1</dimmValue>
 			<dimmerMode>FULL_BRIGHNESS</dimmerMode>
 			<maxValue>15</maxValue>
@@ -124,8 +124,8 @@
 	<device>
 		<actor>
 			<id>0</id>
-			<capability>DIMM</capability>
 			<capability>SWITCH</capability>
+			<capability>DIMM</capability>
 			<dimmValue>-1</dimmValue>
 			<dimmerMode>FULL_BRIGHNESS</dimmerMode>
 			<maxValue>15</maxValue>

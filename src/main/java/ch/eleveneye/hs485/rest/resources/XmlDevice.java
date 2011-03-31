@@ -36,7 +36,7 @@ public class XmlDevice {
 		private Integer											timeValue;
 		private Boolean											toggleBit;
 
-		@XmlElement(name = "id")
+		@XmlElement(name = "actor_id")
 		public Integer getAddress() {
 			return address;
 		}
@@ -157,7 +157,7 @@ public class XmlDevice {
 		return actors;
 	}
 
-	@XmlElement(name = "id")
+	@XmlElement(name = "device_id")
 	public int getAddress() {
 		return address;
 	}
