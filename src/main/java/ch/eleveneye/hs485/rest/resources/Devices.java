@@ -19,7 +19,7 @@ public class Devices {
 
 	public Devices(final Collection<PhysicallyDevice> devices) throws IOException {
 		for (final PhysicallyDevice physicallyDevice : devices)
-			getDevices().add(XmlDevice.buildDevice(physicallyDevice));
+			getDevices().add(new XmlDevice(physicallyDevice));
 	}
 
 	@XmlElement(name = "device")

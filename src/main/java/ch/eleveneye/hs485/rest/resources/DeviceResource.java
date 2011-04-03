@@ -14,12 +14,12 @@ import ch.eleveneye.hs485.device.Registry;
 
 import com.thoughtworks.xstream.XStream;
 
-@Path("")
+@Path("devices")
 public class DeviceResource {
 	private static Registry	registry;
 	static {
 		try {
-			registry = new Registry();
+			registry = RegistrySingleton.getRegistry();
 		} catch (final UnsupportedCommOperationException e) {
 			throw new RuntimeException(e);
 		} catch (final IOException e) {
@@ -28,14 +28,13 @@ public class DeviceResource {
 	}
 
 	@GET
-	@Path("devices/{deviceid}.xml")
+	@Path("{id}")
 	@Produces(MediaType.APPLICATION_XML)
-	public XmlDevice getDevice(@PathParam("deviceid") final Integer address) throws IOException {
-		return XmlDevice.buildDevice(registry.getPhysicallyDevice(address));
+	public XmlDevice getDevice(@PathParam("id") final Integer address) throws IOException {
+		return new XmlDevice(registry.getPhysicallyDevice(address));
 	}
 
 	@GET
-	@Path("devices.xml")
 	@Produces(MediaType.APPLICATION_XML)
 	public Devices listDevices() throws IOException {
 		final Devices devices = new Devices(registry.listPhysicalDevices());
